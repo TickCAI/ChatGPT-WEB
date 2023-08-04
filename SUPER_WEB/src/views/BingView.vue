@@ -149,7 +149,7 @@ export default {
             if (typeof (WebSocket) == "undefined") {
                 console.log("您的浏览器不支持WebSocket");
             } else {
-                let socketUrl = "ws://后端IP:8624/chat/api/BING/" + localStorage.getItem('token')
+                let socketUrl = "wss://back.clouddrak.cn/chat/api/BING/" + localStorage.getItem('token')
                 if (socket.value != null) {
                     socket.value.close();
                     socket.value = null;
